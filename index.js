@@ -12,7 +12,7 @@ function fileHandler(file) {
             throw err;
         }
         var outputFile = config.targetFolder + '/' + path.basename(file).replace('.md', '.html'),
-            htmlContent = markdownConverter.makeHtml(frenchify(data));
+            htmlContent = markdownConverter.makeHtml(frenchify(data.toString()));
 
         fs.writeFile(outputFile, htmlContent, function(err) {
             if(err) {
