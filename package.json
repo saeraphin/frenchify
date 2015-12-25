@@ -1,0 +1,25 @@
+{
+  "name": "frenchify",
+  "version": "0.0.0",
+  "description": "Convert .md French text to compliant French typography rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pansay/frenchify.git"
+  },
+  "author": "pansay",
+  "license": "UNLICENSE",
+  "bugs": {
+    "url": "https://github.com/pansay/frenchify/issues"
+  },
+  "dependencies": {
+    "showdown": "~1.3.0",
+    "mkdirp": "~0.5.1"
+  },
+  "devDependencies": {
+    "eslint": "~1.10.3"
+  }
+}
