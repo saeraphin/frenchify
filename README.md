@@ -17,6 +17,7 @@ rules.json
 * footnotes expected format
 
 >blabla(15)
+>
 >(15) note about blabla
 
 ## to use
