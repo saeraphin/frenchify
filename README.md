@@ -10,7 +10,7 @@ rules.json
 * thin non breaking space from normal space for ?!;
 * non breaking space from normal space for :
 * em dash from --
-* French quotes with non breaking spaces from regular double quotes
+* French quotes with non breaking spaces from regular double quotes	
 
 ### Extra formatting
 
