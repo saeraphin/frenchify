@@ -1,5 +1,5 @@
 # frenchify
-Convert .md French text to html compliant with [French typography rules](http://liberpedia.net/s/ponctuation.jpg) and some useful exta formatting
+Convert .md French text to html compliant with [French typography rules](http://liberpedia.net/s/ponctuation.jpg) and some useful exta formatting.
 
 ## rules
 
@@ -22,4 +22,5 @@ rules.json
 
 ## to use
 
-* `node index.js yourfile.md`
+* cli: `node index.js yourfile.md`
+* web: `http://pansay.github.io/frenchify/`
