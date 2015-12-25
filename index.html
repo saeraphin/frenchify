@@ -11,16 +11,36 @@
         </h1>
     </header>
 
-    <div>
+    <div>{{abc}}
         <form>
-            {{txt.to}}
-            {{txt.from}}
-            {{txt.frenchify}}
-            {{txt.markdown}}
 
-            abc:{{abc}}
-            def:{{def}}
+            <label>
+                {{txt.frenchify}}
+                <input type="checkbox" data-ng-model="convert.frenchify" />
+            </label>
+            
+            <label>
+                {{txt.markdown}}
+                <input type="checkbox" data-ng-model="convert.markdown" />
+            </label>
 
+            <label>
+                {{txt.from}}
+                <textarea rows="50" cols="50" data-ng-model="convert.from"></textarea>
+            </label>
+
+            <label>
+                {{txt.html}}
+                <textarea rows="50" cols="50" data-ng-model="convert.html"></textarea>
+            </label>
+
+            <div>
+                {{txt.rendered}}
+                <div data-ng-bind-html="convert.html"></div>
+            </div>
+
+            <a data-ng-click="convert()">{{txt.convert}}</a>
+            
         </form>
     </div>
 
