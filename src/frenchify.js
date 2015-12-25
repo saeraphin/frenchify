@@ -5,7 +5,7 @@ module.exports = function(buffer) {
 
     rules.forEach(function(rule) {
         frenchifiedContent = frenchifiedContent.replace(new RegExp(rule.from, 'gmi'), rule.to);
-    })
+    });
     console.log(frenchifiedContent);
     return frenchifiedContent;  
 };

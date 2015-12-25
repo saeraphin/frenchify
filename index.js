@@ -3,7 +3,7 @@ var fs = require('fs'),
     path = require('path'),
     config = require('./config'),
     showdown = require('showdown'),
-    markdownConverter = new showdown.Converter();
+    markdownConverter = new showdown.Converter(),
     frenchify = require('./src/frenchify'); // TODO implement front version too with it
 
 function fileHandler(file) {
