@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>{{txt.title}}</title>
+    <link rel="stylesheet" type="text/css" href="src/styles/main.css">
 </head>
 <body>
     <header>
@@ -11,36 +12,42 @@
         </h1>
     </header>
 
-    <div>{{abc}}
+    <div class="main">
         <form>
 
-            <label>
+            <label class="checkbox">
                 {{txt.frenchify}}
-                <input type="checkbox" data-ng-model="convert.frenchify" />
+                <input type="checkbox" data-ng-model="convert.frenchify" data-ng-change="convert()" />
             </label>
-            
-            <label>
+
+            <label class="checkbox">
                 {{txt.markdown}}
-                <input type="checkbox" data-ng-model="convert.markdown" />
+                <input type="checkbox" data-ng-model="convert.markdown" data-ng-change="convert()" />
             </label>
 
-            <label>
-                {{txt.from}}
-                <textarea rows="50" cols="50" data-ng-model="convert.from"></textarea>
-            </label>
+            <div class="columns">
 
-            <label>
-                {{txt.html}}
-                <textarea rows="50" cols="50" data-ng-model="convert.html"></textarea>
-            </label>
+                <label class="column">
+                    {{txt.from}}
+                    <textarea data-ng-model="convert.from" data-ng-change="convert()">
+                    </textarea>
+                </label>
 
-            <div>
-                {{txt.rendered}}
-                <div data-ng-bind-html="convert.html"></div>
+                <label class="column">
+                    {{txt.html}}
+                    <textarea data-ng-model="convert.html">
+                    </textarea>
+                </label class="column">
+
+                <div class="column">
+                    {{txt.rendered}}
+                    <div class="rendered" data-ng-bind-html="convert.html"></div>
+                </div>
+
             </div>
 
-            <a data-ng-click="convert()">{{txt.convert}}</a>
-            
+            <!-- <a class="convert" data-ng-click="convert()">{{txt.convert}}</a> -->
+
         </form>
     </div>
 
